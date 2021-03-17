@@ -7,15 +7,17 @@ let g:colors_name = 'arcolors'
 
 " Color Palette
 let s:orange = '#af5f00'
-let s:red = '#cf0000'
 let s:white = '#ffffff'
 let s:cyan = '#006b83'
 let s:cyan2 = '#007a7d'
 let s:cyan3 = '#00aeb9'
 let s:cyan4 = '#0078ab'
 let s:red = '#b15e7c'
+let s:red2 = '#331111'
 let s:green = '#709d6c'
+let s:green2 = '#113311'
 let s:yellow = '#b5a262'
+let s:yellow2 = '#333311'
 let s:blue      = '#608cc3'
 let s:gray1     = '#1b202a'
 let s:gray2     = '#232936'
@@ -53,12 +55,12 @@ endfun
 call s:HL('ColorColumn',  '',       '',       '')
 call s:HL('Cursor',       '',       '',       '')
 call s:HL('CursorColumn', '',       '',       '')
-call s:HL('CursorLine',   '',       'none',       'underline')
+call s:HL('CursorLine',   '',       'none',   'underline')
 call s:HL('Directory',    s:blue,   '',       '')
-call s:HL('DiffAdd',      'none',   s:green,  'none')
-call s:HL('DiffChange',   'none',   s:yellow, 'none')
-call s:HL('DiffDelete',   'none',   s:red,    'none')
-call s:HL('DiffText',     'none',   s:blue,   'none')
+call s:HL('DiffAdd',      'none',   s:green2,  'none')
+call s:HL('DiffChange',   'none',   s:yellow2,'none')
+call s:HL('DiffDelete',   'none',   s:red2,   'bold')
+call s:HL('DiffText',     'none',   s:green,  'none')
 call s:HL('ErrorMsg',     s:red,    '',       'bold')
 call s:HL('VertSplit',    s:gray4,  s:gray1,  'none')
 call s:HL('Folded',       s:gray5,  s:gray1,  '')
