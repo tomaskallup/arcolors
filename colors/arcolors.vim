@@ -7,18 +7,20 @@ let g:colors_name = 'arcolors'
 
 " Color Palette
 let s:orange = '#af5f00'
+
 let s:white = '#ffffff'
-let s:cyan = '#006b83'
-let s:cyan2 = '#007a7d'
-let s:cyan3 = '#00aeb9'
-let s:cyan4 = '#0078ab'
+
 let s:red = '#b15e7c'
 let s:red2 = '#331111'
+
 let s:green = '#709d6c'
 let s:green2 = '#113311'
+
 let s:yellow = '#b5a262'
 let s:yellow2 = '#333311'
+
 let s:blue      = '#608cc3'
+
 let s:gray1     = '#1b202a'
 let s:gray2     = '#232936'
 let s:gray3     = '#323c4d'
@@ -31,11 +33,6 @@ let s:cyan3 = '#00a39b'
 let s:cyan4 = '#0078ab'
 let s:cyan5 = '#007ad7'
 let s:cyan6 = '#00aeb9'
-
-"let s:purple    = '#8f72bf'
-"let s:cyan      = '#56adb7'
-"let s:orange    = '#b3785d'
-"let s:pink      = '#c47ebd'
 
 function! s:HL(group, fg, bg, attr)
     let l:attr = a:attr
@@ -114,3 +111,8 @@ call s:HL('Todo',         s:cyan3,  s:gray1,  'bold')
 " Tree sitter
 hi link TSFunction Normal
 hi link TSConstructor Normal
+
+" Gitsings
+call s:HL('GitSignsAdd',     'none',   s:green,  'none')
+call s:HL('GitSignsDelete',  'none',   s:red,    'none')
+call s:HL('GitSignsChange',  'none',   s:orange, 'none')
